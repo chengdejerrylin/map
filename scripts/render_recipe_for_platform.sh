@@ -71,7 +71,7 @@ cd "$script_bin/.."
 
 
 # variant file names are subject to change when we rerender the CI
-variant_file=".ci_support/${conda_platform}_.yaml"
+variant_file=".ci_support/${conda_platform}_numpy1.22python3.10.____cpython.yaml"
 if [[ ! -e "$variant_file" ]]; then
     echo "::ERROR:: variant file '$PWD/$variant_file' does not exist. Giving up."
     exit 1
