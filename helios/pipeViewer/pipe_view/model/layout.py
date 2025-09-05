@@ -9,9 +9,10 @@ import pickle
 from typing import Any, Dict, List, Optional, TextIO, cast, TYPE_CHECKING
 
 from .import element_types as etypes
+from .element import MultiElement
 
 if TYPE_CHECKING:
-    from .element import Element, MultiElement, PropertyDict
+    from .element import Element, PropertyDict
     from .layout_context import Layout_Context
     from .workspace import Workspace
 
