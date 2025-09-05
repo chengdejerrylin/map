@@ -19,10 +19,11 @@ if (VALGRIND_TOOL)
     "--suppressions=${SPARTA_BASE}/test/valgrind_leakcheck.supp"
     "--soname-synonyms=somalloc=NONE"
     )
-  set (VALGRIND_TEST_LABEL valgrind_test)
 else()
   message(STATUS "valgrind testing NOT enabled")
 endif()
+
+set (VALGRIND_TEST_LABEL valgrind_test)
 
 # Since make does not pass the parallel jobs flag to ctest from the user,
 # a fixed count will be set based on core count w/ a max 8
